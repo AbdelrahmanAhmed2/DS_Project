@@ -160,6 +160,7 @@
     <ClInclude Include="GUI\GUIWindows\MainScreen.h" />
     <ClInclude Include="GUI\GUIWindows\StartingScreen.h" />
     <ClInclude Include="GUI\GUIDrawables\NormalGUIElement.h" />
+    <ClInclude Include="GUI\GUIWindows\TextArea.h" />
     <ClInclude Include="Rest\Cook.h" />
     <ClInclude Include="Rest\Order.h" />
     <ClInclude Include="Rest\Restaurant.h" />

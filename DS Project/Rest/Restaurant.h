@@ -20,10 +20,18 @@ private:
 	GUI *pGUI; 
 	Queue<Event*> EventsQueue;	     //Queue of all events that will be loaded from file
 	
-	// Normal -------------------
-	LinkedList<Order*> Norm_ord_A; 
+	// Orders -------------------
+	LinkedList<Order*> Norm_Ord;
+	Queue<Order*> Veg_Ord;
+	PriorityQueue<Order*> VIP_Ord;
 
-	
+	// Cooks --------------------
+	PriorityQueue<Cook*> Norm_Cook;
+	PriorityQueue<Cook*> Veg_Cook;
+	PriorityQueue<Cook*> VIP_Cook;
+
+
+
 	//
 	// TODO: Add More Data Members As Needed
 	//
@@ -35,6 +43,7 @@ public:
 	~Restaurant();
 	
 	void ExecuteEvents(int TimeStep);	//executes all events at current timestep
+	
 	void RunSimulation();
 
 	void FillDrawingList();
