@@ -72,7 +72,7 @@ public:
 		{
 			p = head->getNext();
 			delete head;
-			head = p
+			head = p;
 		}
 		tail = nullptr;
 		count = 0;
@@ -84,7 +84,7 @@ public:
 	LinkedList* CloneList()
 	{
 		LinkedList* L = new LinkedList();
-		Node<T>* p = Head;
+		Node<T>* p = head;
 		while (p)
 		{
 			L->InsertEnd(p->getItem());
@@ -99,10 +99,10 @@ public:
 
 	bool InsertSorted(const T& value)
 	{
-		Node<T>* p = Head;
+		Node<T>* p = head;
 
 		// Special cases for the head.
-		if ((Head == nullptr) || (Head->getItem() > value))
+		if ((head == nullptr) || (head->getItem() > value))
 		{
 			// The List is empty or the first item is already larger than the value.
 			InsertBeg(value);
@@ -111,7 +111,7 @@ public:
 		else {
 
 			// If the head value is equal to the value given.
-			if (Head->getItem() == value)
+			if (head->getItem() == value)
 			{
 				return false;
 			}
@@ -142,7 +142,7 @@ public:
 
 	bool DeleteFirst(T* data)
 	{
-		if (Head)
+		if (head)
 		{
 			if (head == tail) tail = nullptr;
 			Node<T>* p = head->getNext();
@@ -178,7 +178,7 @@ public:
 	//deletes the first node with the given value (if found) and returns the node deleted
 	//if not found, returns nullptr
 
-	Node* DeleteNode(const T& data)
+	Node<T>* DeleteNode(const T& data)
 	{
 		if (head == nullptr) return nullptr;
 		if (head->getItem() == data)
@@ -195,7 +195,7 @@ public:
 		}
 
 		Node<T>* p = head;
-		Node<t>* next = p->getNext();
+		Node<T>* next = p->getNext();
 
 		while (next)
 		{

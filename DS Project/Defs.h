@@ -28,15 +28,7 @@ enum ORD_STATUS	//order status
 
 enum STATUS  // Cook Status
 {
-	free,  
-	busy
+	FREE,  
+	BUSY
 };
 
-enum REGION  // The four quarters of the screem: [A B C D]
-{
-	REG_A,
-	REG_B,
-	REG_C,
-	REG_D,
-	REG_CNT
-};

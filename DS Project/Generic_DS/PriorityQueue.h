@@ -81,7 +81,7 @@ bool PriorityQueue<T>::enqueue(const T& newEntry, int p)
 			ptr->setNext(newNodePtr);
 			return true;
 		}
-		ptr = ptr->getNext()
+		ptr = ptr->getNext();
 	}
 	ptr->setNext(newNodePtr); // insert End.
 	return true;
@@ -139,18 +139,17 @@ bool PriorityQueue<T>::peekFront(T& frntEntry, int& p) const
 /*
 Function: clear()
 Empties the queue.
-
 */
 
 template <typename T>
 void PriorityQueue<T>::clear()
 {
-	PriorityNode<T>* ptr = frontptr;
-	while (frontptr->getNext())
+	PriorityNode<T>* ptr = frontPtr;
+	while (frontPtr->getNext())
 	{
-		frontptr = frontptr->getNext();
+		frontPtr = frontPtr->getNext();
 		delete ptr;
-		ptr = frontptr;
+		ptr = frontPtr;
 	}
 	count = 0;
 }

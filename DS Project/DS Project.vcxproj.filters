@@ -107,6 +107,7 @@
     </ClInclude>
     <ClInclude Include="Generic_DS\PriorityNode.h" />
     <ClInclude Include="Generic_DS\PriorityQueue.h" />
+    <ClInclude Include="Generic_DS\LinkedList.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\logo.png">
