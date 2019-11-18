@@ -105,6 +105,8 @@
     <ClInclude Include="Rest\Cook.h">
       <Filter>Rest</Filter>
     </ClInclude>
+    <ClInclude Include="Generic_DS\PriorityNode.h" />
+    <ClInclude Include="Generic_DS\PriorityQueue.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\logo.png">

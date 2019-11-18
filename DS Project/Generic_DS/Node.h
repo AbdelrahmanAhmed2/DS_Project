@@ -1,4 +1,3 @@
-
 #ifndef __NODE_H_
 #define __NODE_H_
 
@@ -8,6 +7,7 @@ class Node
 private :
 	T item; // A data item
 	Node<T>* next; // Pointer to next node
+
 public :
 	Node();
 	Node( const T & r_Item);	//passing by const ref.

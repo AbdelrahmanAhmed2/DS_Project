@@ -25,3 +25,18 @@ enum ORD_STATUS	//order status
 	DONE,	//Delivered (finished) to its destination
 	ORD_STATUS_CNT
 };
+
+enum STATUS  // Cook Status
+{
+	free,  
+	busy
+};
+
+enum REGION  // The four quarters of the screem: [A B C D]
+{
+	REG_A,
+	REG_B,
+	REG_C,
+	REG_D,
+	REG_CNT
+};
