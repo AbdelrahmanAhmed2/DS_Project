@@ -45,8 +45,9 @@ public:
 	void ExecuteEvents(int TimeStep);	//executes all events at current timestep
 	
 	void RunSimulation();
-
 	void FillDrawingList();
+
+	void AddOrders(Order* ord);
 
 	//
 	// TODO: Add More Member Functions As Needed

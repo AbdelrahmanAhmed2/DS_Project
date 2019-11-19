@@ -6,6 +6,13 @@ using namespace std;
 #include "Restaurant.h"
 #include "..\Events\ArrivalEvent.h"
 
+#include "..\GUI\GUIDrawables\NormalGUIElement.h"
+#include "..\GUI\GUIDrawables\VeganGUIElement.h"
+#include "..\GUI\GUIDrawables\VIPGUIElement.h"
+#include "..\GUI\GUI.h"
+#include "..\Events\ArrivalEvent.h"
+
+
 
 Restaurant::Restaurant()
 {
@@ -66,4 +73,25 @@ void Restaurant::FillDrawingList()
 	//It should add ALL orders and cooks to the drawing list
 	//It should get orders from orders lists/queues/stacks/whatever (same for cooks)
 
+	pGUI->updateInterface();
+
+}
+
+/* This functions adds an order to its correct list. */
+void Restaurant::AddOrders(Order* ord)
+{
+	switch (ord->GetType())
+	{
+	case TYPE_NRM:
+		Norm_Ord.InsertEnd(ord);
+		break;
+	case TYPE_VEG:
+		Veg_Ord.enqueue(ord);
+		break;
+	case TYPE_VIP:
+		// weight function to assign priority.
+		int priority = (int)(100 * (ord->GetPrice() * ord->GetDishes() / ord->GetArrTime()));
+		VIP_Ord.enqueue(ord, priority);
+		break;
+	}
 }
