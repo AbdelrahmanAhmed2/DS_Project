@@ -129,7 +129,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Events\ArrivalEvent.cpp" />
+    <ClCompile Include="Events\CancellationEvent.cpp" />
     <ClCompile Include="Events\Event.cpp" />
+    <ClCompile Include="Events\PromotionEvent.cpp" />
     <ClCompile Include="GUI\GUI.cpp" />
     <ClCompile Include="GUI\GUIDrawables\GUIDrawable.cpp" />
     <ClCompile Include="GUI\GUIDrawables\VeganGUIElement.cpp" />
@@ -146,7 +148,9 @@
   <ItemGroup>
     <ClInclude Include="Defs.h" />
     <ClInclude Include="Events\ArrivalEvent.h" />
+    <ClInclude Include="Events\CancellationEvent.h" />
     <ClInclude Include="Events\Event.h" />
+    <ClInclude Include="Events\PromotionEvent.h" />
     <ClInclude Include="Generic_DS\LinkedList.h" />
     <ClInclude Include="Generic_DS\Node.h" />
     <ClInclude Include="Generic_DS\PriorityNode.h" />

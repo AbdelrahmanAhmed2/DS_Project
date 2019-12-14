@@ -61,6 +61,8 @@
     <ClCompile Include="Rest\Cook.cpp">
       <Filter>Rest</Filter>
     </ClCompile>
+    <ClCompile Include="Events\CancellationEvent.cpp" />
+    <ClCompile Include="Events\PromotionEvent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Defs.h" />
@@ -109,6 +111,8 @@
     <ClInclude Include="Generic_DS\PriorityQueue.h" />
     <ClInclude Include="Generic_DS\LinkedList.h" />
     <ClInclude Include="GUI\GUIWindows\TextArea.h" />
+    <ClInclude Include="Events\CancellationEvent.h" />
+    <ClInclude Include="Events\PromotionEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\logo.png">

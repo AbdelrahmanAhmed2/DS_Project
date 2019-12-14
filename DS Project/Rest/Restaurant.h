@@ -26,11 +26,7 @@ private:
 	PriorityQueue<Order*> VIP_Ord;
 
 	// Cooks --------------------
-	PriorityQueue<Cook*> Norm_Cook;
-	PriorityQueue<Cook*> Veg_Cook;
-	PriorityQueue<Cook*> VIP_Cook;
-
-
+	Queue<Cook*> AllCooks[3][2];
 
 	//
 	// TODO: Add More Data Members As Needed
